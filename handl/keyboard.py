@@ -1,7 +1,7 @@
 from aiogram.types import (ReplyKeyboardMarkup, KeyboardButton,
                            InlineKeyboardButton, InlineKeyboardMarkup)
 from aiogram.utils.keyboard import  InlineKeyboardBuilder
-from db.dbMOD import get_all_modpacks #get_all_categories
+from db.dbmod import get_all_modpacks #get_all_categories
 
 main = ReplyKeyboardMarkup(keyboard=[
     [KeyboardButton(text='мод-паки🖥')],
@@ -43,4 +43,5 @@ async def all_modpack(prefix="download"):
         btn_callback = f"{prefix}_{modpack['id']}"
         keyboard.add(InlineKeyboardButton(text=btn_text, callback_data=btn_callback))
     return keyboard.adjust(1).as_markup()
+
 
