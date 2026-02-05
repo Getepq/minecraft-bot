@@ -1,5 +1,5 @@
 import asyncio
-import logging
+#import logging
 
 from aiogram import Bot ,Dispatcher
 from handl.user_hand import rt as usr_hand
@@ -20,10 +20,11 @@ async def main():
 
 if __name__ == '__main__':
     try:
-        logging.basicConfig(level=logging.DEBUG)
+        #logging.basicConfig(level=logging.DEBUG)
         asyncio.run(main())
     except KeyboardInterrupt:
         print('Goodbye')
+
 
 
 
