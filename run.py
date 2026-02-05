@@ -3,7 +3,7 @@ import asyncio
 from aiogram import Bot ,Dispatcher
 from handl.user_hand import rt as usr_hand
 from handl.admin_hand import rt as admin_hand
-from db.dbMod import create_db
+from db.dbMOD import create_db
 import os
 
 bot = Bot(token=os.getenv("TOKEN"))
@@ -23,6 +23,7 @@ if __name__ == '__main__':
         asyncio.run(main())
     except KeyboardInterrupt:
         print('Goodbye')
+
 
 
 
