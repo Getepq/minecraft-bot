@@ -3,7 +3,7 @@ from aiogram.filters import Command
 from aiogram.fsm.context import FSMContext
 from aiogram.types import Message, CallbackQuery
 from aiogram.fsm.state import State, StatesGroup
-from db.dbMod import add_modpack, delete_modpack
+from db.dbMOD import add_modpack, delete_modpack
 import handl.keyboard as kb
 
 ADMIN_ID = [8467563699]
@@ -102,5 +102,6 @@ async def process_file(message: types.Message, state: FSMContext):
         await message.answer(f"Ошибка при сохранении: {e}")
 
     await state.clear()
+
 
 
