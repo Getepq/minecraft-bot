@@ -3,7 +3,7 @@ from aiogram.filters import CommandStart
 from aiogram.types import Message, CallbackQuery, LabeledPrice
 from aiogram.types import PreCheckoutQuery
 import handl.keyboard as kb
-from db.dbmod import get_modpack
+from db.database import get_modpack
 
 rt = Router()
 
