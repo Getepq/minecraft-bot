@@ -1,6 +1,6 @@
 import aiosqlite
 
-DB_NAME = 'db/modpacks.db'
+DB_NAME = 'data/modpacks.db'
 
 async def create_db():
     async with aiosqlite.connect(DB_NAME) as db:
