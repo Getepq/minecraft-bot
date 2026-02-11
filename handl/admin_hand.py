@@ -6,7 +6,7 @@ from aiogram.fsm.state import State, StatesGroup
 from db.database import add_modpack, delete_modpack
 import handl.keyboard as kb
 
-ADMIN_ID = [8467563699]
+ADMIN_ID = []
 
 rt = Router()
 
@@ -102,6 +102,7 @@ async def process_file(message: types.Message, state: FSMContext):
         await message.answer(f"Ошибка при сохранении: {e}")
 
     await state.clear()
+
 
 
 
